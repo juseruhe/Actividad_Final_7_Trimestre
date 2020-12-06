@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\CiudadController;
 
+use App\Http\Controllers\PropietarioController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +31,6 @@ Route::put('ciudad/{id}',[CiudadController::class,'update'])->name('ciudad.updat
 Route::delete('ciudad/{id}',[CiudadController::class,'destroy'])->name('ciudad.destroy');
 
 
+// Rutas de Propietario
+
+Route::get('propietario',[PropietarioController::class,'index'])->name('propietario.index');
