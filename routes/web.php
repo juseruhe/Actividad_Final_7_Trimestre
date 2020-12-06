@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 
+use App\Http\Controllers\CiudadController;
+
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +16,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Rutas 
+
+// Ruta de Ciudad
+
+Route::get('ciudad',[CiudadController::class,'index'])->name('ciudad.index');
+Route::get('ciudad/create',[CiudadController::class,'create'])->name('ciudad.create');
+Route::post('ciudad',[CiudadController::class,'store'])->name('ciudad.store');
+Route::get('ciudad/{id}',[CiudadController::class,'show'])->name('ciudad.show');
+Route::get('ciudad/edit/{id}',[CiudadController::class,'edit'])->name('ciudad.edit');
+Route::put('ciudad/{id}',[CiudadController::class,'update'])->name('ciudad.update');
+Route::delete('ciudad/{id}',[CiudadController::class,'destroy'])->name('ciudad.destroy');
+
+
