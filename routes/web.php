@@ -34,3 +34,9 @@ Route::delete('ciudad/{id}',[CiudadController::class,'destroy'])->name('ciudad.d
 // Rutas de Propietario
 
 Route::get('propietario',[PropietarioController::class,'index'])->name('propietario.index');
+Route::get('propietario/create',[PropietarioController::class,'create'])->name('propietario.create');
+Route::post('propietario',[PropietarioController::class,'store'])->name('propietario.store');
+Route::get('propietario/{id}',[PropietarioController::class,'show'])->name('propietario.show');
+Route::get('propietario/edit/{id}',[PropietarioController::class,'edit'])->name('propietario.edit');
+Route::put('propietario/{id}',[PropietarioController::class,'update'])->name('propietario.update');
+Route::delete('propietario/{id}',[PropietarioController::class,'destroy'])->name('propietario.destroy');

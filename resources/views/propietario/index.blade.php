@@ -29,14 +29,14 @@
 <td>{{$propietario->ciudad->Nombre_Ciudad}}</td>
 <td>
 
-<form action="" method="post">
+<form action="{{route('propietario.destroy',$propietario->id)}}" method="post">
 
 @csrf
 
 @method('DELETE')
 
-<a href="#">Mostrar</a>
-<a href="#">Actualizar</a>
+<a href="{{route('propietario.show',$propietario->id)}}">Mostrar</a>
+<a href="{{route('propietario.edit',$propietario->id)}}">Actualizar</a>
 <button>Eliminar</button>
 </form>
 </td>
