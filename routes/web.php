@@ -10,6 +10,8 @@ use App\Http\Controllers\ConductorController;
 
 use App\Http\Controllers\ColorController;
 
+use App\Http\Controllers\MarcaController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -64,4 +66,13 @@ Route::get('color/{id}',[ColorController::class,'show'])->name('color.show');
 Route::get('color/edit/{id}',[ColorController::class,'edit'])->name('color.edit');
 Route::put('color/{id}',[ColorController::class,'update'])->name('color.update');
 Route::delete('color/{id}',[ColorController::class,'destroy'])->name('color.destroy');
+
+// Rutas de Marca
+Route::get('marca',[MarcaController::class,'index'])->name('marca.index');
+Route::get('marca/create',[MarcaController::class,'create'])->name('marca.create');
+Route::post('marca',[MarcaController::class,'store'])->name('marca.store');
+Route::get('marca/{id}',[MarcaController::class,'show'])->name('marca.show');
+Route::get('marca/edit/{id}',[MarcaController::class,'edit'])->name('marca.edit');
+Route::put('marca/{id}',[MarcaController::class,'update'])->name('marca.update');
+Route::delete('marca/{id}',[MarcaController::class,'destroy'])->name('marca.destroy');
 
