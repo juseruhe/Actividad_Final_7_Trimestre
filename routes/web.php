@@ -8,6 +8,8 @@ use App\Http\Controllers\PropietarioController;
 
 use App\Http\Controllers\ConductorController;
 
+use App\Http\Controllers\ColorController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -54,4 +56,12 @@ Route::put('conductor/{id}',[ConductorController::class,'update'])->name('conduc
 Route::delete('conductor/{id}',[ConductorController::class,'destroy'])->name('conductor.destroy');
 
 
+// Rutas del Color
+Route::get('color',[ColorController::class,'index'])->name('color.index');
+Route::get('color/create',[ColorController::class,'create'])->name('color.create');
+Route::post('color',[ColorController::class,'store'])->name('color.store');
+Route::get('color/{id}',[ColorController::class,'show'])->name('color.show');
+Route::get('color/edit/{id}',[ColorController::class,'edit'])->name('color.edit');
+Route::put('color/{id}',[ColorController::class,'update'])->name('color.update');
+Route::delete('color/{id}',[ColorController::class,'destroy'])->name('color.destroy');
 
