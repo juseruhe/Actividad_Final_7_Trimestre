@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePropietariosTable extends Migration
+class CreateConductoresTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePropietariosTable extends Migration
      */
     public function up()
     {
-        Schema::create('propietarios', function (Blueprint $table) {
+        Schema::create('conductores', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('Numero_Cedula')->unique();
             $table->string('Primer_Nombre',70);
@@ -34,6 +34,6 @@ class CreatePropietariosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('propietarios');
+        Schema::dropIfExists('conductores');
     }
 }

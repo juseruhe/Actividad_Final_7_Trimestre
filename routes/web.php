@@ -6,6 +6,8 @@ use App\Http\Controllers\CiudadController;
 
 use App\Http\Controllers\PropietarioController;
 
+use App\Http\Controllers\ConductorController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -40,3 +42,16 @@ Route::get('propietario/{id}',[PropietarioController::class,'show'])->name('prop
 Route::get('propietario/edit/{id}',[PropietarioController::class,'edit'])->name('propietario.edit');
 Route::put('propietario/{id}',[PropietarioController::class,'update'])->name('propietario.update');
 Route::delete('propietario/{id}',[PropietarioController::class,'destroy'])->name('propietario.destroy');
+
+// Rutas de Conductor
+
+Route::get('conductor',[ConductorController::class,'index'])->name('conductor.index');
+Route::get('conductor/create',[ConductorController::class,'create'])->name('conductor.create');
+Route::post('conductor',[ConductorController::class,'store'])->name('conductor.store');
+Route::get('conductor/{id}',[ConductorController::class,'show'])->name('conductor.show');
+Route::get('conductor/edit/{id}',[ConductorController::class,'edit'])->name('conductor.edit');
+Route::put('conductor/{id}',[ConductorController::class,'update'])->name('conductor.update');
+Route::delete('conductor/{id}',[ConductorController::class,'destroy'])->name('conductor.destroy');
+
+
+

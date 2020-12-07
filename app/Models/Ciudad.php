@@ -7,6 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 use App\Models\Propietario;
 
+use App\Models\Conductor;
+
 class Ciudad extends Model
 {
     use HasFactory;
@@ -24,5 +26,10 @@ public function propietarios(){
     return $this->hasMany(Propietario::class,'id');
 }
 
+
+public function conductores(){
+
+    return $this->hasMany(Conductor::class,'id');
+}
 
 }
