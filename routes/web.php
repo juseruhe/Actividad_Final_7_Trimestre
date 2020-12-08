@@ -12,6 +12,8 @@ use App\Http\Controllers\ColorController;
 
 use App\Http\Controllers\MarcaController;
 
+use App\Http\Controllers\Tipo_VehiculoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -75,4 +77,11 @@ Route::get('marca/{id}',[MarcaController::class,'show'])->name('marca.show');
 Route::get('marca/edit/{id}',[MarcaController::class,'edit'])->name('marca.edit');
 Route::put('marca/{id}',[MarcaController::class,'update'])->name('marca.update');
 Route::delete('marca/{id}',[MarcaController::class,'destroy'])->name('marca.destroy');
+
+// Rutas de Tipo de Vehiculo
+Route::get('tipo_vehiculo',[Tipo_VehiculoController::class,'index'])->name('tipo_vehiculo.index');
+Route::get('tipo_vehiculo/create',[Tipo_VehiculoController::class,'create'])->name('tipo_vehiculo.create');
+Route::post('tipo_vehiculo',[Tipo_VehiculoController::class,'store'])->name('tipo_vehiculo.store');
+Route::get('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'show'])->name('tipo_vehiculo.show');
+
 
