@@ -86,3 +86,4 @@ Route::get('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'show'])->name('
 Route::get('tipo_vehiculo/edit/{id}',[Tipo_VehiculoController::class,'edit'])->name('tipo_vehiculo.edit');
 Route::put('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'update'])->name('tipo_vehiculo.update');
 Route::delete('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'destroy'])->name('tipo_vehiculo.destroy');
+
