@@ -38,4 +38,33 @@ class Tipo_VehiculoController extends Controller
 
         return view('tipo_vehiculo.show', compact('tipo_vehiculos'));
     }
+
+
+    public function edit($id){
+
+        $tipo_vehiculos = Tipo_Vehiculo::find($id)
+        ->all()
+        ->where('id', '=', $id);
+        
+
+        return view('tipo_vehiculo.edit', compact('tipo_vehiculos'));
+
+
+    }
+
+
+    public function update(Request $request, $id){
+
+       Tipo_Vehiculo::find($id)->update($request->all());
+
+       return redirect()->route('tipo_vehiculo.show',$id);
+
+    }
+
+    public function destroy($id){
+
+        Tipo_Vehiculo::find($id)->delete();
+
+        return redirect()->route('tipo_vehiculo.index');
+    }
 }

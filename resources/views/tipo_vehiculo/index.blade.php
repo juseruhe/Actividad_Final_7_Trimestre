@@ -16,14 +16,14 @@
 <td>{{$tipo_vehiculo->Nombre_Tipo_Vehiculo}}</td>
 <td>
 
-<form action="" method="post">
+<form action="{{route('tipo_vehiculo.destroy',$tipo_vehiculo->id)}}" method="post">
 
 @csrf
 
 @method('DELETE')
 
 <a href="{{route('tipo_vehiculo.show',$tipo_vehiculo->id)}}">Mostrar</a>
-<a href="">Actualizar</a>
+<a href="{{route('tipo_vehiculo.edit',$tipo_vehiculo->id)}}">Actualizar</a>
 <button>Eliminar</button>
 </form>
 </td>

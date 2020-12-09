@@ -83,5 +83,6 @@ Route::get('tipo_vehiculo',[Tipo_VehiculoController::class,'index'])->name('tipo
 Route::get('tipo_vehiculo/create',[Tipo_VehiculoController::class,'create'])->name('tipo_vehiculo.create');
 Route::post('tipo_vehiculo',[Tipo_VehiculoController::class,'store'])->name('tipo_vehiculo.store');
 Route::get('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'show'])->name('tipo_vehiculo.show');
-
-
+Route::get('tipo_vehiculo/edit/{id}',[Tipo_VehiculoController::class,'edit'])->name('tipo_vehiculo.edit');
+Route::put('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'update'])->name('tipo_vehiculo.update');
+Route::delete('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'destroy'])->name('tipo_vehiculo.destroy');
