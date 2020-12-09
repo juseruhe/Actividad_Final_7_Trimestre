@@ -22,9 +22,9 @@
 
 @method('DELETE')
 
-<a href="{{route('color.show',$color->id)}}">Mostrar</a>
-<a href="{{route('color.edit',$color->id)}}">Actualizar</a>
-<button>Eliminar</button>
+<a href="{{route('color.show',$color->id)}}" class="button is-info">Mostrar</a>
+<a href="{{route('color.edit',$color->id)}}" class="button is-warning">Actualizar</a>
+<button class="button is-danger">Eliminar</button>
 </form>
 </td>
 @endforeach

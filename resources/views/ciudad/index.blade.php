@@ -22,9 +22,9 @@
 
 @method('DELETE')
 
-<a href="{{route('ciudad.show',$ciudad->id)}}">Mostrar</a>
-<a href="{{route('ciudad.edit',$ciudad->id)}}">Actualizar</a>
-<button href="">Eliminar</button>
+<a href="{{route('ciudad.show',$ciudad->id)}}" class="button is-info">Mostrar</a>
+<a href="{{route('ciudad.edit',$ciudad->id)}}" class="button is-warning">Actualizar</a>
+<button class="button is-danger">Eliminar</button>
 </form>
 </td>
 @endforeach

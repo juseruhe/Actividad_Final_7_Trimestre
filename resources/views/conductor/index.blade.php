@@ -4,8 +4,8 @@
 
 <a href="">Crear Conductor</a>
 
-<table>
-<tr>
+<table class="m-4">
+<tr class="is-full">
 <td>ID</td>
 <td>Número de Cédula</td>
 <td>Primer Nombre</td>
@@ -35,10 +35,10 @@
 
 @method('DELETE')
 
-<a href="{{route('conductor.show',$conductor->id)}}">Mostrar</a>
-<a href="{{route('conductor.edit',$conductor->id)}}">Actualizar</a>
+<a href="{{route('conductor.show',$conductor->id)}}" class="button is-info">Mostrar</a>
+<a href="{{route('conductor.edit',$conductor->id)}}" class="button is-warning">Actualizar</a>
 
-<button>Eliminar</button>
+<button class="button is-danger">Eliminar</button>
 </form>
 </td>
 @endforeach
