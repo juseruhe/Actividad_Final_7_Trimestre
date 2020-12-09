@@ -4,14 +4,20 @@
 
 <form action="{{route('ciudad.store')}}" method="post">
 
+
 @csrf
 <h2> Crear una Ciudad</h2>
 
-<label for="Nombre de Ciudad"> Nombre de Ciudad</label>
+<div class="field">
+<label for="Nombre de Ciudad" class="label"> Nombre de Ciudad</label>
 
-<input type="text" name="Nombre_Ciudad" placeholder="Escribe la ciudad">
 
-<input type="submit" value="Crear Ciudad">
+<div class="control">
+<input type="text" class="input is-success " name="Nombre_Ciudad" placeholder="Escribe la ciudad">
+</div>
+
+</div>
+<input type="submit" class="button is-success " value="Crear Ciudad">
 
 
 

@@ -9,11 +9,11 @@
 @method('PUT')
 <h2> Actualizar un Tipo de Vehículo</h2>
 
-<label for="Nombre de Ciudad"> Nombre de Tipo de Vehículo</label>
+<label  class="label" for="Nombre de Ciudad"> Nombre de Tipo de Vehículo</label>
 
 <input type="text" name="Nombre_Tipo_Vehiculo" value="{{$tipo_vehiculo->Nombre_Tipo_Vehiculo}}" placeholder="Escribe la ciudad">
 
-<input type="submit" value="Actualizar Tipo_Vehiculo">
+<input type="submit" class="button is-warning" value="Actualizar Tipo_Vehiculo">
 
 
 

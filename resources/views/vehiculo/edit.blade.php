@@ -9,11 +9,11 @@
 @method('PUT')
 <h2> Actualizar un Vehículo</h2>
 
-<label for="Direccion"> Placa</label>
+<label  class="label" for="Direccion"> Placa</label>
 
 <input type="text" name="Placa" placeholder="Escribe la ciudad" value={{$vehiculo->Placa}}>
 
-<label for="Telefono"> Color</label>
+<label  class="label" for="Telefono"> Color</label>
 
 <select name="Color_id">
 
@@ -27,7 +27,7 @@
 
 </select>
 
-<label for="Telefono"> Marca</label>
+<label  class="label" for="Telefono"> Marca</label>
 
 <select name="Marca_id">
 
@@ -41,7 +41,7 @@
 
 </select>
 
-<label for="Telefono"> Tipo de Vehículo</label>
+<label  class="label" for="Telefono"> Tipo de Vehículo</label>
 
 <select name="Tipo_Vehiculo_id">
 
@@ -57,7 +57,7 @@
 
 </select>
 
-<label for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
+<label  class="label" for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
 
 <select name="Conductor_id">
 
@@ -79,7 +79,7 @@
 
 </select>
 
-<label for="Telefono"> Cédula del Propietario</label>
+<label  class="label" for="Telefono"> Cédula del Propietario</label>
 
 <select name="Propietario_id">
 
@@ -102,7 +102,7 @@
 
 
 
-<input type="submit" value="Actualizar Vehículo">
+<input type="submit" class="button is-warning" value="Actualizar Vehículo">
 
 
 

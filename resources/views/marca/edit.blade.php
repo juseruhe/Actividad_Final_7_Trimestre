@@ -9,11 +9,11 @@
 @method('PUT')
 <h2> Actualizar una Marca</h2>
 
-<label for="Nombre de Ciudad"> Nombre de Marca</label>
+<label  class="label" for="Nombre de Ciudad"> Nombre de Marca</label>
 
 <input type="text" name="Nombre_Marca" value="{{$marca->Nombre_Marca}}" placeholder="Escribe la ciudad">
 
-<input type="submit" value="Actualizar Marca">
+<input type="submit" class="button is-warning" value="Actualizar Marca">
 
 
 

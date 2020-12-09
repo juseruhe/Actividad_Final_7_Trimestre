@@ -7,11 +7,11 @@
 @csrf
 <h2> Crear una Ciudad</h2>
 
-<label for="Nombre de Ciudad"> Nombre del Color</label>
+<label  class="label" for="Nombre de Ciudad"> Nombre del Color</label>
 
 <input type="text" name="Nombre_Color" placeholder="Escribe la ciudad">
 
-<input type="submit" value="Crear Ciudad">
+<input type="submit" class="button is-success" value="Crear Ciudad">
 
 
 

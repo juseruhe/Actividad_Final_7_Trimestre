@@ -9,11 +9,11 @@
 @method('PUT')
 <h2> Actualizar una Color</h2>
 
-<label for="Nombre de Ciudad"> Nombre de Color</label>
+<label  class="label" for="Nombre de Ciudad"> Nombre de Color</label>
 
 <input type="text" name="Nombre_Color" value="{{$color->Nombre_Color}}" placeholder="Escribe la ciudad">
 
-<input type="submit" value="Actualizar Color">
+<input type="submit" class="button is-warning" value="Actualizar Color">
 
 
 

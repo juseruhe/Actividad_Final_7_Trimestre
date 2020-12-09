@@ -7,13 +7,13 @@
 @csrf
 <h2> Crear un Vehículo</h2>
 
-<label for="Direccion"> Placa</label>
+<label  class="label" for="Direccion"> Placa</label>
 
 <input type="text" name="Placa" placeholder="Escribe la ciudad">
 
-<label for="Telefono"> Color</label>
+<label  class="label" for="Telefono"> Color</label>
 
-<select name="Color_id">
+<select class="select is-rounded" name="Color_id">
 
 @foreach($colores as $color)
 
@@ -23,9 +23,9 @@
 
 </select>
 
-<label for="Telefono"> Marca</label>
+<label   class="label" for="Telefono"> Marca</label>
 
-<select name="Marca_id">
+<select class="select is-rounded" name="Marca_id">
 
 @foreach($marcas as $marca)
 
@@ -35,9 +35,9 @@
 
 </select>
 
-<label for="Telefono"> Tipo de Vehículo</label>
+<label  class="label" for="Telefono"> Tipo de Vehículo</label>
 
-<select name="Tipo_Vehiculo_id">
+<select class="select is-rounded" name="Tipo_Vehiculo_id">
 
 @foreach($tipo_vehiculos as $tipo_vehiculo)
 
@@ -47,9 +47,9 @@
 
 </select>
 
-<label for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
+<label  class="label" for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
 
-<select name="Conductor_id">
+<select class="select is-rounded" name="Conductor_id">
 
 @foreach($conductores as $conductor)
 
@@ -63,9 +63,9 @@
 
 </select>
 
-<label for="Telefono"> Cédula del Propietario</label>
+<label  class="label" for="Telefono"> Cédula del Propietario</label>
 
-<select name="Propietario_id">
+<select class="select is-rounded" name="Propietario_id">
 
 @foreach($propietarios as $propietario)
 
@@ -88,7 +88,7 @@
 
 
 
-<input type="submit" value="Crear Propietario">
+<input type="submit" class="button is-success" value="Crear Propietario">
 
 
 
