@@ -37,6 +37,7 @@
 
 <a href="{{route('conductor.show',$conductor->id)}}">Mostrar</a>
 <a href="{{route('conductor.edit',$conductor->id)}}">Actualizar</a>
+
 <button>Eliminar</button>
 </form>
 </td>
