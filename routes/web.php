@@ -14,6 +14,8 @@ use App\Http\Controllers\MarcaController;
 
 use App\Http\Controllers\Tipo_VehiculoController;
 
+use App\Http\Controllers\VehiculoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -86,4 +88,16 @@ Route::get('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'show'])->name('
 Route::get('tipo_vehiculo/edit/{id}',[Tipo_VehiculoController::class,'edit'])->name('tipo_vehiculo.edit');
 Route::put('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'update'])->name('tipo_vehiculo.update');
 Route::delete('tipo_vehiculo/{id}',[Tipo_VehiculoController::class,'destroy'])->name('tipo_vehiculo.destroy');
+
+
+// Rutas de Vehiculo
+Route::get('vehiculo',[VehiculoController::class,'index'])->name('vehiculo.index');
+Route::get('vehiculo/create',[VehiculoController::class,'create'])->name('vehiculo.create');
+Route::post('vehiculo',[VehiculoController::class,'store'])->name('vehiculo.store');
+Route::get('vehiculo/{id}',[VehiculoController::class,'show'])->name('vehiculo.show');
+Route::get('vehiculo/edit/{id}',[VehiculoController::class,'edit'])->name('vehiculo.edit');
+Route::put('vehiculo/{id}',[VehiculoController::class,'update'])->name('vehiculo.update');
+Route::delete('vehiculo/{id}',[VehiculoController::class,'destroy'])->name('vehiculo.destroy');
+
+
 

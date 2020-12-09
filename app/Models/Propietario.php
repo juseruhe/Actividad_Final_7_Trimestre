@@ -7,6 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 use App\Models\Ciudad;
 
+use App\Models\Vehiculo;
+
+
 class Propietario extends Model
 {
     use HasFactory;
@@ -25,6 +28,11 @@ protected $fillable = [
 public function ciudad(){
 
    return  $this->belongsTo(Ciudad::class,'Ciudad_id');
+}
+
+public function vehiculos(){
+
+    return $this->hasMany(Vehiculo::class,'id');
 }
 
 
