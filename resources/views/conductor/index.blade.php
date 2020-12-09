@@ -4,8 +4,8 @@
 
 <a href="">Crear Conductor</a>
 
-<table class="m-4">
-<tr class="is-full">
+<table class=" table is-bordered m-4">
+<tr class="is-full ">
 <td>ID</td>
 <td>Número de Cédula</td>
 <td>Primer Nombre</td>
@@ -41,8 +41,9 @@
 <button class="button is-danger">Eliminar</button>
 </form>
 </td>
-@endforeach
 </tr>
+@endforeach
+
 
 
 

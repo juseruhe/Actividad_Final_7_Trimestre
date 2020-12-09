@@ -4,7 +4,7 @@
 
 <a href="">Crear Marca</a>
 
-<table>
+<table class="table is-bordered">
 <tr>
 <td>ID</td>
 <td>Nombre del Marca</td>
@@ -27,8 +27,9 @@
 <button class="button is-danger">Eliminar</button>
 </form>
 </td>
-@endforeach
 </tr>
+@endforeach
+
 
 
 

@@ -4,7 +4,7 @@
 
 <a href="">Crear Tipo de Vehiculos</a>
 
-<table>
+<table class="table is-bordered m-6">
 <tr>
 <td>ID</td>
 <td>Nombre del Tipo del Vehículo</td>
@@ -27,8 +27,9 @@
 <button class="button is-danger">Eliminar</button>
 </form>
 </td>
-@endforeach
 </tr>
+@endforeach
+
 
 
 

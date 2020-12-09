@@ -2,7 +2,7 @@
 
 @section('content')
 
-<table>
+<table class="table is-bordered">
 <tr>
 <td>ID</td>
 <td>Número de Cédula</td>
@@ -25,9 +25,9 @@
 <td>{{$propietario->Direccion}}</td>
 <td>{{$propietario->Telefono}}</td>
 <td>{{$propietario->ciudad->Nombre_Ciudad}}</td>
-
-@endforeach
 </tr>
+@endforeach
+
 
 
 

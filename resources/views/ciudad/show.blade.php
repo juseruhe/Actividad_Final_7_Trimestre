@@ -2,7 +2,7 @@
 
 @section('content')
 
-<table>
+<table class="table is-bordered">
 <tr>
 <td>ID</td>
 <td>Nombre de la Ciudad</td>
@@ -12,9 +12,9 @@
 @foreach($ciudades as $ciudad)
 <td>{{$ciudad->id}}</td>
 <td>{{$ciudad->Nombre_Ciudad}}</td>
-
-@endforeach
 </tr>
+@endforeach
+
 
 
 

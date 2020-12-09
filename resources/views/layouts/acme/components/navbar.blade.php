@@ -105,13 +105,30 @@
             Mostrar Tipo de Vehículos
           </a>
           <a class="navbar-item has-background-info" href={{route('tipo_vehiculo.create')}}>
+            Crear Tipo de Vehículos
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-start">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link" >
+         Vehículos
+        </a>
+
+        <div class="navbar-dropdown">
+          <a class="navbar-item has-background-danger" href={{route('vehiculo.index')}}>
+            Mostrar Vehículos
+          </a>
+          <a class="navbar-item has-background-info" href={{route('vehiculo.create')}}>
             Crear Vehículo
           </a>
         </div>
       </div>
     </div>
 
-    
 
 
 

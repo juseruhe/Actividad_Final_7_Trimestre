@@ -2,7 +2,7 @@
 
 @section('content')
 
-<table>
+<table class="table is-bordered">
 <tr>
 <td>ID</td>
 <td>Nombre del Tipo de Vehículo</td>

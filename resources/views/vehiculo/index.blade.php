@@ -4,7 +4,7 @@
 
 <a href="">Crear Vehículo</a>
 
-<table>
+<table class="table is-bordered">
 <tr>
 <td>ID</td>
 <td>Placa</td>
@@ -45,13 +45,14 @@
 
 @method('DELETE')
 
-<a href="{{route('vehiculo.show',$vehiculo->id)}}">Mostrar</a>
-<a href="{{route('vehiculo.edit',$vehiculo->id)}}">Actualizar</a>
-<button>Eliminar</button>
+<a href="{{route('vehiculo.show',$vehiculo->id)}}" class="button is-info">Mostrar</a>
+<a href="{{route('vehiculo.edit',$vehiculo->id)}}" class="button is-warning">Actualizar</a>
+<button class="button is-danger">Eliminar</button>
 </form>
 </td>
-@endforeach
 </tr>
+@endforeach
+
 
 
 

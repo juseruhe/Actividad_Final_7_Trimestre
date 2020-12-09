@@ -4,7 +4,7 @@
 
 <a href="">Crear Propietario</a>
 
-<table>
+<table class="table is-bordered">
 <tr>
 <td>ID</td>
 <td>Número de Cédula</td>
@@ -40,8 +40,9 @@
 <button class="button is-danger">Eliminar</button>
 </form>
 </td>
-@endforeach
 </tr>
+
+@endforeach
 
 
 
