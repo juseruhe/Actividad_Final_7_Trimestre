@@ -1,7 +1,7 @@
 <nav class="navbar has-background-primary p-5   " role="navigation" aria-label="main navigation">
  
 
-  <div id="navbarBasicExample" class="navbar-menu">
+  <div id="navbarBasicExample" class="navbar-menu p-5">
     <div class="navbar-start">
       <div class="navbar-item has-dropdown is-hoverable">
         

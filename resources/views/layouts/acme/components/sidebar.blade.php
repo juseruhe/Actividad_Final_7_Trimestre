@@ -1,70 +1,32 @@
 
-
-<aside class="menu has-background-warning ">
- 
-  <p class="menu-label">
-    Ciudad
-  </p>
-  
-  <ul class="menu-list">
-    <li><a>Mostrar Ciudades</a></li>
-    <li><a>Crear Ciudad</a></li>
-  </ul>
-
-  <p class="menu-label">
-    Propietario
-  </p>
-  <ul class="menu-list">
-    <li><a>Mostrar Propietarios</a></li>
-    <li><a>Crear Propietario</a></li>
-  </ul>
-
-  <p class="menu-label">
-    Conductor
-  </p>
-  <ul class="menu-list">
-    <li><a>Mostrar Conductores</a></li>
-    <li><a>Crear Conductor</a></li>
-  </ul>
-
-
-  <p class="menu-label">
-   Color
-  </p>
-  <ul class="menu-list">
-    <li><a>Mostrar Colores</a></li>
-    <li><a>Crear Color</a></li>
-  </ul>
-
-
-  <p class="menu-label">
-    Tipo de Vehículo
-  </p>
-  <ul class="menu-list">
-    <li><a>Mostrar Tipo de Vehículos</a></li>
-    <li><a>Crear Tipo de Vehículo</a></li>
-  </ul>
-
-
-  <p class="menu-label">
-    Marca
-  </p>
-  <ul class="menu-list">
-    <li><a>Mostrar Marcas</a></li>
-    <li><a>Crear Marca</a></li>
-  </ul>
-
-
-  <p class="menu-label">
-    Vehículo
-  </p>
-  <ul class="menu-list">
-    <li><a>Mostrar Vehículos</a></li>
-    <li><a>Crear Vehículo</a></li>
-  </ul>
-
-  
- 
-
-
-</aside>
+<div class="columns">
+<nav class="column is-narrow m-1 has-background-grey ">
+<div class="menu">
+<button type="button" id="sidebarCollapse" class="button is-primary">
+<i class="fa fa-bars"></i>
+<span class="sr-only">Toggle Menu</span>
+</button>
+</div>
+<h1><a href="index.html" class="logo column">Project Name</a></h1>
+<ul class="list-unstyled components mb-5">
+<li class="active">
+<a href="#" class="column"><span class="fa fa-home mr-3"></span> Homepage</a>
+</li>
+<li>
+<a href="#" class="column"><span class="fa fa-user mr-3"></span> Dashboard</a>
+</li>
+<li>
+<a href="#" class="column"><span class="fa fa-sticky-note mr-3"></span> Friends</a>
+</li>
+<li>
+<a href="#" class="column"><span class="fa fa-sticky-note mr-3"></span> Subcription</a>
+</li>
+<li>
+<a href="#" class="column"><span class="fa fa-paper-plane mr-3"></span> Settings</a>
+</li>
+<li>
+<a href="#" class="column"><span class="fa fa-paper-plane mr-3"></span> Information</a>
+</li>
+</ul>
+</nav>
+</div>

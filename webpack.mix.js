@@ -17,8 +17,13 @@ const mix = require('laravel-mix');
     ]);*/
 
 mix.styles(['resources/bulma/css/bulma.min.css',
-'resources/font-awesome/css/all.min.css'],'public/css/app.css')
+'resources/font-awesome/css/all.min.css',
+'resources/font-awesome/css/poppins.css'
+
+],'public/css/app.css')
 
 .scripts([
-    'resources/font-awesome/js/all.min.js'
+    'resources/font-awesome/js/all.min.js',
+    'resources/font-awesome/js/jquery.min.js',
+    'resources/font-awesome/js/popper.js'
 ],'public/js/app.js')
