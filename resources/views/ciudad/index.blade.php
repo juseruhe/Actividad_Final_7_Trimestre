@@ -6,8 +6,8 @@
 
 <a href="{{route('ciudad.create')}}">Crear Ciudad</a>
 
-<table class="table is-bordered has-text-centered mb-6 mt-4 has-text-weight-semibold">
-<tr>
+<table class="table is-bordered has-text-centered">
+<tr class="has-text-weight-semibold is-size-5 mt-4" >
 <td>ID</td>
 <td>Nombre de la Ciudad</td>
 <td>Acciones</td>
