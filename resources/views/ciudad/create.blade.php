@@ -6,7 +6,7 @@
 
 
 @csrf
-<h2> Crear una Ciudad</h2>
+<h2 class="is-size-3 has-text-centered"> Crear una Ciudad</h2>
 
 <div class="field">
 <label for="Nombre de Ciudad" class="label"> Nombre de Ciudad</label>

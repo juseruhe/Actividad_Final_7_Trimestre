@@ -6,24 +6,24 @@
     <title>ACME</title>
     <link rel="stylesheet" href="{{url('css/app.css')}}">
     
-</head>
 <body>
     
 
 @include('layouts.acme.components.navbar')
 
-<h1> Bienvenido a la Compañia ACME</h1>
+@include('layouts.acme.components.sidebar')
 
+<h1 class="is-size-2 has-text-centered mb-4 mt-4 has-text-weight-bold"> Compañia ACME</h1>
 
-
-
-
- @include('layouts.acme.components.sidebar')
 
 <div>
 @yield('content')
 </div>
 
 @include('layouts.acme.components.footer')
+
+
+<script src="{{url('js/app.js')}}"></script>
+
 </body>
 </html>

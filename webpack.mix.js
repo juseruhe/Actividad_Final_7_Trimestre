@@ -16,4 +16,9 @@ const mix = require('laravel-mix');
         //
     ]);*/
 
-mix.styles(['resources/bulma/css/bulma.min.css'],'public/css/app.css')
+mix.styles(['resources/bulma/css/bulma.min.css',
+'resources/font-awesome/css/all.min.css'],'public/css/app.css')
+
+.scripts([
+    'resources/font-awesome/js/all.min.js'
+],'public/js/app.js')

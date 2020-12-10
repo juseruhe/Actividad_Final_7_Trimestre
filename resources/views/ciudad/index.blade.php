@@ -2,9 +2,11 @@
 
 @section('content')
 
+<h2 class="is-size-3 has-text-centered"> Mostrar Ciudades </h2>
+
 <a href="{{route('ciudad.create')}}">Crear Ciudad</a>
 
-<table class="table is-bordered">
+<table class="table is-bordered has-text-centered mb-6 mt-4 has-text-weight-semibold">
 <tr>
 <td>ID</td>
 <td>Nombre de la Ciudad</td>
