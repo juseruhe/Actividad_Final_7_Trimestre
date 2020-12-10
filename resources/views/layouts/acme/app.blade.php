@@ -6,7 +6,7 @@
     <title>ACME</title>
     <link rel="stylesheet" href="{{url('css/app.css')}}">
     
-<body>
+<body class="is-family-primary">
     
 
 @include('layouts.acme.components.navbar')
@@ -16,7 +16,7 @@
 <h1 class="is-size-2 has-text-centered mb-4 mt-4 has-text-weight-bold"> Compañia ACME</h1>
 
 
-<div>
+<div class="">
 @yield('content')
 </div>
 

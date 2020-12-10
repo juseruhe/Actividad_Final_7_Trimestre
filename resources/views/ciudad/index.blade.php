@@ -2,6 +2,8 @@
 
 @section('content')
 
+<div class="">
+
 <h2 class="is-size-3 has-text-centered"> Mostrar Ciudades </h2>
 
 <a href="{{route('ciudad.create')}}">Crear Ciudad</a>
@@ -44,3 +46,5 @@
 
 
 @endsection
+
+</div>
