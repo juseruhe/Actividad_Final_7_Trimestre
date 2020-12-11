@@ -2,9 +2,14 @@
 
 @section('content')
 
-<a href="">Crear Conductor</a>
+<div class="columns">
+<div class="column is-full">
+<a href="{{route('conductor.create')}}">Crear Conductor</a>
+</div>
+</div> 
 
-<table class=" table is-bordered m-4">
+<div class="columns">
+<table class=" table is-bordered m-4 column is-full">
 <tr class="is-full ">
 <td>ID</td>
 <td>Número de Cédula</td>
@@ -51,7 +56,7 @@
 
 </table>
 
-
+</div>
 
 
 

@@ -2,9 +2,14 @@
 
 @section('content')
 
-<a href="">Crear Propietario</a>
+<div class="columns">
+<div class="column is-full">
+<a href="{{route('propietario.create')}}">Crear Propietario</a>
+</div>
+</div>
 
-<table class="table is-bordered">
+<div class="columns">
+<table class="table is-bordered column is-full">
 <tr>
 <td>ID</td>
 <td>Número de Cédula</td>
@@ -51,7 +56,7 @@
 </table>
 
 
-
+</div>
 
 
 @endsection

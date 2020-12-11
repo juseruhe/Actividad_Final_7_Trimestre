@@ -2,9 +2,14 @@
 
 @section('content')
 
+<div class="columns">
+<div class="column is-full">
 <a href="">Crear Marca</a>
+</div>
+</div>
 
-<table class="table is-bordered">
+<div class="columns">
+<table class="table is-bordered column is-full">
 <tr>
 <td>ID</td>
 <td>Nombre del Marca</td>
@@ -37,7 +42,7 @@
 
 </table>
 
-
+</div>
 
 
 

@@ -2,23 +2,41 @@
 
 @section('content')
 
-<div class="">
+<div class="columns">
 
+<div class="column is-full">
 <h2 class="is-size-3 has-text-centered"> Mostrar Ciudades </h2>
+</div>
+</div>
 
+<div class="columns">
+
+<div class="column is-full">
 <a href="{{route('ciudad.create')}}">Crear Ciudad</a>
 
-<table class="table is-bordered has-text-centered">
-<tr class="has-text-weight-semibold is-size-5 mt-4" >
+</div>
+
+</div>
+
+<div class="columns">
+
+<table class="table is-bordered has-text-centered column is-full ">
+    
+<tr class="has-text-weight-semibold is-size-5 mt-4  " >
+
 <td>ID</td>
 <td>Nombre de la Ciudad</td>
 <td>Acciones</td>
 </tr>
-<tr>
+
+
+<tr class="">
 @foreach($ciudades as $ciudad)
-<td>{{$ciudad->id}}</td>
-<td>{{$ciudad->Nombre_Ciudad}}</td>
-<td>
+<td class="">{{$ciudad->id}}</td>
+<td class="">{{$ciudad->Nombre_Ciudad}}</td>
+
+<td class="">
+
 
 <form action="{{route('ciudad.destroy',$ciudad->id)}}" method="post">
 
@@ -32,6 +50,7 @@
 </form>
 </td>
 </tr>
+
 @endforeach
 
 
@@ -41,10 +60,9 @@
 
 </table>
 
-
+</div>
 
 
 
 @endsection
 
-</div>

@@ -2,9 +2,16 @@
 
 @section('content')
 
-<a href="">Crear Color</a>
+<div class="columns"> 
+<div class="column is-full">
+<a href="{{route('color.create')}}">Crear Color</a>
+</div>
 
-<table class="table is-bordered">
+</div>
+
+
+<div class="columns">
+<table class="table is-bordered column is-full" >
 <tr>
 <td>ID</td>
 <td>Nombre del Color</td>
@@ -38,7 +45,7 @@
 </table>
 
 
-
+</div>
 
 
 @endsection
