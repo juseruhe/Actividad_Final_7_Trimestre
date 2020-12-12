@@ -7,15 +7,15 @@
 
 @csrf
 @method('PUT')
-<h2> Actualizar un Vehículo</h2>
+<h2 class="is-size-2 has-text-centered"> Actualizar un Vehículo</h2>
 
-<label  class="label" for="Direccion"> Placa</label>
+<label  class="label is-size-4 has-text-centered" for="Direccion"> Placa</label>
 
-<input type="text" name="Placa" placeholder="Escribe la ciudad" value={{$vehiculo->Placa}}>
+<input type="text" class="input" name="Placa" placeholder="Escribe la ciudad" value={{$vehiculo->Placa}}>
 
-<label  class="label" for="Telefono"> Color</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Color</label>
 
-<select name="Color_id">
+<select name="Color_id" class="is-rounded input">
 
 <option value="{{$vehiculo->Color_id}}">{{$vehiculo->color->Nombre_Color}}</option>
 
@@ -27,9 +27,9 @@
 
 </select>
 
-<label  class="label" for="Telefono"> Marca</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Marca</label>
 
-<select name="Marca_id">
+<select name="Marca_id" class=" is-rounded input">
 
 <option value="{{$vehiculo->Marca_id}}">{{$vehiculo->marca->Nombre_Marca}}</option>
 
@@ -41,9 +41,9 @@
 
 </select>
 
-<label  class="label" for="Telefono"> Tipo de Vehículo</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Tipo de Vehículo</label>
 
-<select name="Tipo_Vehiculo_id">
+<select name="Tipo_Vehiculo_id" class=" is-rounded input">
 
 <option value="{{$vehiculo->Tipo_Vehiculo_id}}">{{$vehiculo->tipo_vehiculo
     ->Nombre_Tipo_Vehiculo}}
@@ -57,9 +57,9 @@
 
 </select>
 
-<label  class="label" for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
 
-<select name="Conductor_id">
+<select name="Conductor_id" class="is-rounded input">
 
 <option value="{{$vehiculo->Conductor_id}}">{{$vehiculo->conductor->Numero_Cedula
     ." ".$vehiculo->conductor->Primer_Nombre
@@ -79,9 +79,9 @@
 
 </select>
 
-<label  class="label" for="Telefono"> Cédula del Propietario</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Cédula,Nombres y Apellidos del Propietario</label>
 
-<select name="Propietario_id">
+<select name="Propietario_id" class=" is-rounded input">
 
 <option value="{{$vehiculo->Propietario_id}}">{{$vehiculo->propietario->Numero_Cedula
     ." ".$vehiculo->propietario->Primer_Nombre
@@ -102,7 +102,7 @@
 
 
 
-<input type="submit" class="button is-warning" value="Actualizar Vehículo">
+<input type="submit" class="button is-warning mb-4 mt-4" value="Actualizar Vehículo">
 
 
 

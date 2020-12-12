@@ -4,13 +4,13 @@
 
 <div class="columns">
 <div class="column is-full">
-<a href="">Crear Marca</a>
+<a class="button has-background-link has-text-white" href="{{route('marca.create')}}">Crear Marca</a>
 </div>
 </div>
 
 <div class="columns">
-<table class="table is-bordered column is-full">
-<tr>
+<table class="table is-bordered column is-full mb-4">
+<tr class="has-background-link has-text-white">
 <td>ID</td>
 <td>Nombre del Marca</td>
 <td>Acciones</td>

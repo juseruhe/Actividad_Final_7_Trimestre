@@ -5,15 +5,15 @@
 <form action="{{route('vehiculo.store')}}" method="post">
 
 @csrf
-<h2> Crear un Vehículo</h2>
+<h2 class="is-size-2 has-text-centered"> Crear un Vehículo</h2>
 
-<label  class="label" for="Direccion"> Placa</label>
+<label  class="label is-size-4 has-text-centered" for="Direccion"> Placa</label>
 
-<input type="text" name="Placa" placeholder="Escribe la ciudad">
+<input type="text" class="input" name="Placa" placeholder="Escribe la ciudad">
 
-<label  class="label" for="Telefono"> Color</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Color</label>
 
-<select class="select is-rounded" name="Color_id">
+<select class="select is-rounded input" name="Color_id">
 
 @foreach($colores as $color)
 
@@ -23,9 +23,9 @@
 
 </select>
 
-<label   class="label" for="Telefono"> Marca</label>
+<label   class="label is-size-4 has-text-centered " for="Telefono"> Marca</label>
 
-<select class="select is-rounded" name="Marca_id">
+<select class="select is-rounded input" name="Marca_id">
 
 @foreach($marcas as $marca)
 
@@ -35,9 +35,9 @@
 
 </select>
 
-<label  class="label" for="Telefono"> Tipo de Vehículo</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Tipo de Vehículo</label>
 
-<select class="select is-rounded" name="Tipo_Vehiculo_id">
+<select class="select is-rounded input" name="Tipo_Vehiculo_id">
 
 @foreach($tipo_vehiculos as $tipo_vehiculo)
 
@@ -47,9 +47,9 @@
 
 </select>
 
-<label  class="label" for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Cédula,Nombres y Apellidos del Conductor</label>
 
-<select class="select is-rounded" name="Conductor_id">
+<select class="select is-rounded input" name="Conductor_id">
 
 @foreach($conductores as $conductor)
 
@@ -63,9 +63,9 @@
 
 </select>
 
-<label  class="label" for="Telefono"> Cédula del Propietario</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Cédula,Nombres y Apellidos del Propietario</label>
 
-<select class="select is-rounded" name="Propietario_id">
+<select class="select is-rounded input" name="Propietario_id">
 
 @foreach($propietarios as $propietario)
 
@@ -88,7 +88,7 @@
 
 
 
-<input type="submit" class="button is-success" value="Crear Propietario">
+<input type="submit" class="button is-success mb-4 mt-4" value="Crear Propietario">
 
 
 

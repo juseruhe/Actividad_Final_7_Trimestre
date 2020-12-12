@@ -2,8 +2,8 @@
 
 @section('content')
 
-<table class="table is-bordered">
-<tr>
+<table class="table is-bordered mb-4">
+<tr class="has-background-link has-text-white">
 <td>ID</td>
 <td>Nombre del Tipo de Vehículo</td>
 

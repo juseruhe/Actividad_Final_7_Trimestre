@@ -2,10 +2,10 @@
 
 @section('content')
 
-<a href="">Crear Vehículo</a>
+<a class="button has-background-link has-text-white" href="{{route('vehiculo.create')}}">Crear Vehículo</a>
 
-<table class="table is-bordered">
-<tr>
+<table class="table is-bordered m-4">
+<tr class="has-background-link has-text-white">
 <td>ID</td>
 <td>Placa</td>
 <td>Color</td>

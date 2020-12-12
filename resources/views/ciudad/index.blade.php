@@ -12,7 +12,7 @@
 <div class="columns">
 
 <div class="column is-full">
-<a href="{{route('ciudad.create')}}">Crear Ciudad</a>
+<a class="button has-background-info has-text-white" href="{{route('ciudad.create')}}">Crear Ciudad</a>
 
 </div>
 
@@ -20,9 +20,9 @@
 
 <div class="columns">
 
-<table class="table is-bordered has-text-centered column is-full ">
+<table class="table  is-bordered has-text-centered column is-full ml-6 mb-4 ">
     
-<tr class="has-text-weight-semibold is-size-5 mt-4  " >
+<tr class="has-text-weight-semibold is-size-5 mt-4 has-background-link has-text-white " >
 
 <td>ID</td>
 <td>Nombre de la Ciudad</td>

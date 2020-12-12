@@ -2,10 +2,10 @@
 
 @section('content')
 
-<a href="">Crear Tipo de Vehiculos</a>
+<a class="button has-background-link has-text-white" href="{{route('tipo_vehiculo.create')}}">Crear Tipo de Vehiculos</a>
 
-<table class="table is-bordered m-6">
-<tr>
+<table class="table is-bordered m-4">
+<tr class="has-background-link has-text-white">
 <td>ID</td>
 <td>Nombre del Tipo del Vehículo</td>
 <td>Acciones</td>

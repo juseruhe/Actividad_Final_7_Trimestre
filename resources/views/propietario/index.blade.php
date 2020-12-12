@@ -4,13 +4,13 @@
 
 <div class="columns">
 <div class="column is-full">
-<a href="{{route('propietario.create')}}">Crear Propietario</a>
+<a  class="button has-background-info has-text-white" href="{{route('propietario.create')}}">Crear Propietario</a>
 </div>
 </div>
 
 <div class="columns">
-<table class="table is-bordered column is-full">
-<tr>
+<table class="table is-bordered column is-full has-text-centered mb-4">
+<tr class="has-background-link has-text-white">
 <td>ID</td>
 <td>Número de Cédula</td>
 <td>Primer Nombre</td>

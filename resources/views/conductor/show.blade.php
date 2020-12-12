@@ -3,7 +3,7 @@
 @section('content')
 
 <table class="table is-bordered">
-<tr>
+<tr class="has-background-link has-text-white mb-5">
 <td>ID</td>
 <td>Número de Cédula</td>
 <td>Primer Nombre</td>
@@ -25,8 +25,9 @@
 <td>{{$conductor->Direccion}}</td>
 <td>{{$conductor->Telefono}}</td>
 <td>{{$conductor->ciudad->Nombre_Ciudad}}</td>
-</tr>
 @endforeach
+</tr>
+
 
 
 

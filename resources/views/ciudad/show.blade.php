@@ -2,7 +2,7 @@
 
 @section('content')
 
-<table class="table is-bordered">
+<table class="table is-bordered has-text-centered mb-4 is-size-4">
 <tr>
 <td>ID</td>
 <td>Nombre de la Ciudad</td>
@@ -24,7 +24,7 @@
 
 
 
-
+<a class="button has-background-grey has-text-white mb-4" href="{{route('ciudad.index')}}">Volver Mostrar Ciudades</a>
 
 
 

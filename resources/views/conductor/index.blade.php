@@ -4,13 +4,13 @@
 
 <div class="columns">
 <div class="column is-full">
-<a href="{{route('conductor.create')}}">Crear Conductor</a>
+<a class="button has-background-link has-text-white" href="{{route('conductor.create')}}">Crear Conductor</a>
 </div>
 </div> 
 
 <div class="columns">
 <table class=" table is-bordered m-4 column is-full">
-<tr class="is-full ">
+<tr class="is-full has-background-link has-text-white ">
 <td>ID</td>
 <td>Número de Cédula</td>
 <td>Primer Nombre</td>

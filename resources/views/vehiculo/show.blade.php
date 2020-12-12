@@ -2,8 +2,8 @@
 
 @section('content')
 
-<table class="table is-bordered">
-<tr>
+<table class="table is-bordered m-4">
+<tr class="has-background-link has-text-white">
 <td>ID</td>
 <td>Placa</td>
 <td>Color</td>

@@ -5,37 +5,37 @@
 <form action="{{route('conductor.store')}}" method="post">
 
 @csrf
-<h2> Crear un Propietario</h2>
+<h2 class="is-size-2 has-text-centered"> Crear un Propietario</h2>
 
-<label  class="label" for="Cédula"> Número de Cédula</label>
+<label  class="label is-size-4 has-text-centered" for="Cédula"> Número de Cédula</label>
 
-<input type="text" name="Numero_Cedula" placeholder="Escribe la Cédula">
+<input class="input" type="text" name="Numero_Cedula" placeholder="Escribe la Cédula">
 
-<label  class="label" for="nombre"> Primer Nombre</label>
+<label  class="label is-size-4 has-text-centered" for="nombre"> Primer Nombre</label>
 
-<input type="text" name="Primer_Nombre" placeholder="Escribe la ciudad">
+<input class="input" type="text" name="Primer_Nombre" placeholder="Escribe la ciudad">
 
-<label  class="label" for="Nombre"> Segundo Nombre</label>
+<label  class="label is-size-4 has-text-centered" for="Nombre"> Segundo Nombre</label>
 
-<input type="text" name="Segundo_Nombre" placeholder="Escribe la ciudad">
+<input class="input" type="text" name="Segundo_Nombre" placeholder="Escribe la ciudad">
 
-<label  class="label" for="Apellidos"> Apellidos</label>
+<label  class="label is-size-4 has-text-centered" for="Apellidos"> Apellidos</label>
 
-<input type="text" name="Apellidos" placeholder="Escribe la ciudad">
+<input class="input" type="text" name="Apellidos" placeholder="Escribe la ciudad">
 
-<label  class="label" for="Direccion"> Direccion</label>
+<label  class="label is-size-4 has-text-centered" for="Direccion"> Direccion</label>
 
-<input type="text" name="Direccion" placeholder="Escribe la ciudad">
+<input class="input" type="text" name="Direccion" placeholder="Escribe la ciudad">
 
-<label  class="label" for="Telefono"> Teléfono</label>
+<label  class="label is-size-4 has-text-centered" for="Telefono"> Teléfono</label>
 
-<input type="text" name="Telefono" placeholder="Escribe la ciudad">
+<input class="input" type="text" name="Telefono" placeholder="Escribe la ciudad">
 
-<label  class="label" for="Ciudad"> Ciudad:</label>
+<label  class="label is-size-4 has-text-centered" for="Ciudad"> Ciudad:</label>
 
-<select name="Ciudad_id" class="select is-rounded" >
+<select name="Ciudad_id" class="select is-rounded input" >
 @foreach($ciudades as $ciudad)
-<option value="{{$ciudad->id}}">{{$ciudad->Nombre_Ciudad}}</option>
+<option  value="{{$ciudad->id}}">{{$ciudad->Nombre_Ciudad}}</option>
 @endforeach
 </select>
 
@@ -44,7 +44,7 @@
 
 
 
-<input type="submit" class="button is-success" value="Crear Propietario">
+<input type="submit" class="button is-success mt-4 mb-4" value="Crear Propietario">
 
 
 
